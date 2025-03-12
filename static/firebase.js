@@ -117,7 +117,7 @@ async function vote(team) {
     try {
       const token = await createIdToken();
 
-      fetch('http://localhost:9080/', {
+      fetch('https://tabs-vs-spaces-637384747014.us-central1.run.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
