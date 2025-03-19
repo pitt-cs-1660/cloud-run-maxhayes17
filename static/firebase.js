@@ -129,6 +129,7 @@ async function vote(team) {
       }).then(resp => {
         if (resp.ok) {
           window.alert('Vote submitted!');
+          window.location.reload();
         } else {
           window.alert('Vote failed. Please try again.');
         }
